@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Token Checker</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>Token Checker</h1>
+            <div id="title">Tokenを入力してください（改行で複数指定可）</div>
+            <textarea id="tokenInput" name="token" rows="5" placeholder="Enter Discord Tokens"></textarea>
+            <button id="checkButton" onclick="submit()">Check</button>
+        </div>
+      <div id="validTokens">
+      <h2>Valid Tokens</h2>
+      <div id="validResponse"></div>
+      </div>
+        <div id="invalidTokens">
+            <h2>Invalid Tokens</h2>
+            <div id="invalidResponse"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
