@@ -1,0 +1,75 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 auto;
+  text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF; 
+}
+
+#tokenInput {
+padding: 10px;
+border-radius: 20px;
+width: 100%; 
+background-color: #000000; 
+border: 2px solid #ccc;
+font-size: 16px;
+margin: 20px auto;
+display: block;
+}
+
+#checkButton {
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+background-color: red; 
+color: #FFFFFF;
+font-size: 16px;
+cursor: pointer;
+margin-bottom: 10px;
+display: block;
+margin: 0 auto;
+text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF; 
+box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red; 
+}
+
+#validTokens,
+#invalidTokens {
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  width: 45%;
+  height: 200px;
+  overflow-y: auto;
+}
+
+#validTokens {
+  float: left;
+}
+
+#invalidTokens {
+  float: right;
+}
+
+#validTokens h2,
+#invalidTokens h2 {
+  margin-top: 0;
+  text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF; 
+}
+
+
+#downloadButton::before {
+content: "↧";
+font-size: 20px;
+margin-right: 10px;
+}
