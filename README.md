@@ -8,3 +8,4 @@ Discordのユーザーtokenの生存確認ができるHTML
 2: **VaildTokens**ってとこに表示されたやつは有効、**inVaildTokens**ってとこに表示されたやつは無効です<br>
 
 そんだけ。おわり
+![image](https://github.com/VEDA00133912/Discord-tokenchecker/assets/143770907/1e38e508-ef47-4ca0-ab42-5189d603af27)
