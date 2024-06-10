@@ -4,6 +4,8 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
+  color: #FFFFFF;
+  text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red; 
 }
 
 .container {
@@ -13,7 +15,7 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0 auto;
-  text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF; 
+  text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px #FFFFFF;
 }
 
 #tokenInput {
@@ -21,10 +23,11 @@ padding: 10px;
 border-radius: 20px;
 width: 100%; 
 background-color: #000000; 
-border: 2px solid #ccc;
+border: 2px solid #cccccc;
 font-size: 16px;
 margin: 20px auto;
 display: block;
+ color: #FFFFFF;
 }
 
 #checkButton {
@@ -46,7 +49,7 @@ box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red;
 #invalidTokens {
   margin-top: 20px;
   padding: 20px;
-  border: 2px solid #ccc;
+  border: 2px solid #cccccc;
   border-radius: 20px;
   width: 45%;
   height: 200px;
@@ -64,12 +67,6 @@ box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red;
 #validTokens h2,
 #invalidTokens h2 {
   margin-top: 0;
-  text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF; 
-}
-
-
-#downloadButton::before {
-content: "↧";
-font-size: 20px;
-margin-right: 10px;
+    color: #FFFFFF;
+  text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px #FFFFFF; 
 }
