@@ -1,72 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Kosugi+Maru&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Kosugi+Maru&family=Oswald:wght@200..700&family=Permanent+Marker&family=Racing+Sans+One&display=swap');
+
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: black;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  color: #FFFFFF;
-  text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red; 
+    font-family: 'Roboto', sans-serif;
+    background-image: url('assets/background.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    color: #ffffff;
+}
+
+h1 {
+    font-family: "Bangers", system-ui;
+    margin-bottom: 20px;
+    color: #ffffffff;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0 auto;
-  text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px #FFFFFF;
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
 }
 
 #tokenInput {
-padding: 10px;
-border-radius: 20px;
-width: 100%; 
-background-color: #000000; 
-border: 2px solid #cccccc;
-font-size: 16px;
-margin: 20px auto;
-display: block;
- color: #FFFFFF;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+    background-color: #000000;
+    border: 2px solid #cccccc;
+    font-size: 16px;
+    margin: 20px 0;
+    color: #FFFFFF;
 }
 
 #checkButton {
-padding: 10px 20px;
-border: none;
-border-radius: 20px;
-background-color: red; 
-color: #FFFFFF;
-font-size: 16px;
-cursor: pointer;
-margin-bottom: 10px;
-display: block;
-margin: 0 auto;
-text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF; 
-box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: red;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF;
+    box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red;
 }
 
 #validTokens,
 #invalidTokens {
-  margin-top: 20px;
-  padding: 20px;
-  border: 2px solid #cccccc;
-  border-radius: 20px;
-  width: 45%;
-  height: 200px;
-  overflow-y: auto;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%; /* 幅を100%に設定 */
+    overflow-y: auto;
+    max-height: 150px; /* 高さを低く設定 */
 }
 
 #validTokens {
-  float: left;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ff4d4d;
 }
 
 #invalidTokens {
-  float: right;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ff4d4d;
 }
 
 #validTokens h2,
 #invalidTokens h2 {
-  margin-top: 0;
-    color: #FFFFFF;
-  text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px #FFFFFF; 
+    margin-top: 0;
+    color: #ffffffff;
 }
