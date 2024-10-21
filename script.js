@@ -1,22 +1,22 @@
-function submit() {
-    var input = document.getElementById("tokenInput").value.split('\n');
-    var validResponseDiv = document.getElementById("validResponse");
-    var invalidResponseDiv = document.getElementById("invalidResponse");
+const submit = () => {
+    const input = document.getElementById("tokenInput").value.split('\n').map(token => token.trim());
+    const validResponseDiv = document.getElementById("validResponse");
+    const invalidResponseDiv = document.getElementById("invalidResponse");
     validResponseDiv.innerHTML = "";
     invalidResponseDiv.innerHTML = "";
 
     input.forEach(token => {
-        let xhr = new XMLHttpRequest();
-        xhr.open('GET', 'https://discordapp.com/api/v9/users/@me/guilds', true);
-        xhr.setRequestHeader('Authorization', `${token.trim()}`);
-        xhr.onload = function() {
-            var responseText = xhr.response;
-            if (responseText.includes("401: Unauthorized")) {
-                invalidResponseDiv.innerHTML += "<br />" + token.trim();
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://discordapp.com/api/v10/users/@me', true);
+        xhr.setRequestHeader('Authorization', token);
+        xhr.onload = () => {
+            const responseText = xhr.response;
+            if (xhr.status === 401) { // ステータスコードでエラーチェック
+                invalidResponseDiv.innerHTML += `<br />${token}`;
             } else {
-                validResponseDiv.innerHTML += "<br />" + token.trim();
+                validResponseDiv.innerHTML += `<br />${token}`;
             }
-        }
+        };
         xhr.send();
     });
-}
+};
