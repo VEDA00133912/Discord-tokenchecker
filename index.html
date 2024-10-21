@@ -12,19 +12,21 @@
 
 <body>
     <div class="container">
-        <div>
-            <h1>Token Checker</h1>
-            <div id="title">Tokenを入力してください（改行で複数指定可）</div>
-            <textarea id="tokenInput" name="token" rows="4" cols="70" placeholder="Enter Discord Tokens"></textarea>
-            <button id="checkButton" onclick="submit()">Check</button>
-        </div>
-      <div id="validTokens">
-      <h2>Valid Tokens</h2>
-      <div id="validResponse"></div>
-      </div>
-        <div id="invalidTokens">
-            <h2>Invalid Tokens</h2>
-            <div id="invalidResponse"></div>
+        <h1>Token Checker</h1>
+        <div id="title">Tokenを入力してください（改行で複数指定可）</div>
+        <textarea id="tokenInput" name="token" rows="4" cols="70" placeholder="Enter Discord Tokens"></textarea>
+        <button id="checkButton" onclick="submit()">Check</button>
+
+        <div class="container">
+            <div id="validTokens">
+                <h2>Valid Tokens</h2>
+                <div id="validResponse"></div>
+            </div>
+
+            <div id="invalidTokens">
+                <h2>Invalid Tokens</h2>
+                <div id="invalidResponse"></div>
+            </div>
         </div>
     </div>
 
