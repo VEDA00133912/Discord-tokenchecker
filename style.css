@@ -1,82 +1,93 @@
+/* style.css */
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Kosugi+Maru&family=Permanent+Marker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Kosugi+Maru&family=Oswald:wght@200..700&family=Permanent+Marker&family=Racing+Sans+One&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-image: url('assets/background.png');
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0;
-    color: #ffffff;
+  font-family: "Bangers", system-ui;
+  background-image: url('assets/background.png');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  color: #ffffff;
 }
 
 h1 {
-    font-family: "Bangers", system-ui;
-    margin-bottom: 20px;
-    color: #ffffffff;
-    text-shadow: 2px 2px 4px #000000;
+  font-family: "Bangers", system-ui;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .container {
-    display: flex;
-    max-width: 800px;
-    width: 100%;
-    box-sizing: border-box;
-    flex-direction: column;
-}
-
-#tokenInput {
-    padding: 10px;
-    border-radius: 20px;
-    width: 100%;
-    background-color: #000000;
-    border: 2px solid #cccccc;
-    font-size: 16px;
-    margin: 20px 0;
-    color: #FFFFFF;
-}
-
-#checkButton {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    background-color: red;
-    color: #FFFFFF;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    display: block;
-    margin: 0 auto;
-    text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF;
-    box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red;
+  font-family: "Kosugi Maru", sans-serif;
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 #validTokens,
 #invalidTokens {
-    margin-top: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    width: 100%; /* 幅を100%に設定 */
-    overflow-y: auto;
-    max-height: 150px; /* 高さを低く設定 */
-}
-
-#validTokens {
-    background: rgba(0, 0, 0, 0.8);
-    border: 2px solid #ff4d4d;
-}
-
-#invalidTokens {
-    background: rgba(0, 0, 0, 0.8);
-    border: 2px solid #ff4d4d;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 50%;
+  box-sizing: border-box;
+  overflow-y: auto; 
+  max-height: 400px; /* 高さを低く設定 */
+  margin: 10px;
 }
 
 #validTokens h2,
 #invalidTokens h2 {
-    margin-top: 0;
-    color: #ffffffff;
+  margin-top: 0;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+#validResponse,
+#invalidResponse {
+  color: #ffffff;
+}
+
+.log-entry {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.success {
+  color: #90ee90; /* 成功時の色 */
+}
+
+.failure {
+  color: #ff4d4d; /* 失敗時の色 */
+}
+
+#tokenInput {
+  padding: 10px;
+  border-radius: 20px;
+  width: 100%; 
+  background-color: rgba(255, 255, 255, 0.1); /* 背景色を調整 */
+  border: 2px solid #ff4d4d;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+#checkButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #ff4d4d; 
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+#checkButton:hover {
+  background-color: #ff1a1a;
 }
