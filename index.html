@@ -1,36 +1,29 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discord Token Checker</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="https://ul.h3z.jp/pKWzZY4s.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord Token Checker</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="container">
-        <h1>Token Checker</h1>
-        <div id="title">Tokenを入力してください（改行で複数指定可）</div>
-        <textarea id="tokenInput" name="token" rows="4" cols="70" placeholder="Enter Discord Tokens"></textarea>
-        <button id="checkButton" onclick="submit()">Check</button>
-
-        <div class="container">
-            <div id="validTokens">
-                <h2>Valid Tokens</h2>
-                <div id="validResponse"></div>
-            </div>
-
-            <div id="invalidTokens">
-                <h2>Invalid Tokens</h2>
-                <div id="invalidResponse"></div>
-            </div>
-        </div>
+  <h1>Discord Token Checker</h1>
+  <div class="container">
+    <form id="tokenForm">
+      <label for="token">Token:</label>
+      <textarea id="token" name="token" rows="2" required placeholder="Enter your Discord token here..."></textarea>
+      <button type="submit">Check Token</button>
+    </form>
+    
+    <div id="log">
+      <h2>Log</h2>
+      <div class="log-entry placeholder">Token check results will appear here.</div>
     </div>
+  </div>
+
+  <button id="downloadBtn">Download Valid Tokens</button>
 
     <script src="script.js"></script>
-</body>
 
+</body>
 </html>
