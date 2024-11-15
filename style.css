@@ -1,5 +1,5 @@
-/* style.css */
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Kosugi+Maru&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 body {
   font-family: "Bangers", system-ui;
@@ -17,39 +17,79 @@ body {
 h1 {
   font-family: "Bangers", system-ui;
   margin-bottom: 20px;
+  color: #ffffff;
   text-shadow: 2px 2px 4px #000000;
 }
 
 .container {
-  font-family: "Kosugi Maru", sans-serif;
+  font-family: "Oswald", sans-serif;
   display: flex;
   max-width: 800px;
   width: 100%;
   box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
 }
 
-#validTokens,
-#invalidTokens {
+#tokenForm {
   background: rgba(0, 0, 0, 0.8);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   width: 50%;
   box-sizing: border-box;
-  overflow-y: auto; 
-  max-height: 400px; /* 高さを低く設定 */
-  margin: 10px;
+  margin-bottom: 20px;
 }
 
-#validTokens h2,
-#invalidTokens h2 {
-  margin-top: 0;
+#tokenForm label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
   color: #ffffff;
-  text-shadow: 1px 1px 2px #000000;
 }
 
-#validResponse,
-#invalidResponse {
+#tokenForm textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ff4d4d;
+  border-radius: 5px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+#tokenForm button {
+  font-family: "Bangers", system-ui;
+  width: 100%;
+  padding: 10px;
+  background-color: #ff4d4d;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#tokenForm button:hover {
+  background-color: #ff1a1a;
+}
+
+#log {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 50%;
+  box-sizing: border-box;
+  overflow-y: auto;
+  max-height: 66vh;
+  margin-bottom: 20px;
+}
+
+#log h2 {
+  margin-top: 0;
   color: #ffffff;
 }
 
@@ -58,36 +98,31 @@ h1 {
   font-size: 16px;
 }
 
+.placeholder {
+  color: rgba(255, 255, 255, 0.5); 
+  font-style: italic;
+}
+
 .success {
-  color: #90ee90; /* 成功時の色 */
+  color: #90ee90;
 }
 
 .failure {
-  color: #ff4d4d; /* 失敗時の色 */
+  color: #ff4d4d;
 }
 
-#tokenInput {
-  padding: 10px;
-  border-radius: 20px;
-  width: 100%; 
-  background-color: rgba(255, 255, 255, 0.1); /* 背景色を調整 */
-  border: 2px solid #ff4d4d;
-  font-size: 16px;
-  color: #ffffff;
-}
-
-#checkButton {
+#downloadBtn {
+  font-family: "Bangers", system-ui;
   padding: 10px 20px;
+  background-color: #ff4d4d;
+  color: #ffffff;
   border: none;
   border-radius: 25px;
-  background-color: #ff4d4d; 
-  color: #ffffff;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s;
-  margin-top: 10px;
 }
 
-#checkButton:hover {
+#downloadBtn:hover {
   background-color: #ff1a1a;
 }
