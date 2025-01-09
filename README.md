@@ -2,10 +2,8 @@
 Discordのユーザーtokenの生存確認ができます
 
 ### 使い方
-1: **Enter discord tokens**って書いてあるテキストエリアにtokenを入力(複数可)<br>
-2: **VaildTokens**ってとこに表示されたやつは有効、**inVaildTokens**ってとこに表示されたやつは無効です<br>
-
-そんだけ。おわり
+**Tokens**って書いてあるテキストエリアにtokenを入力(複数可)<br>
+確認が終了したらDownload Valid Tokensボタンでダウンロードします
 
 ### サイト版
 https://discord-tokencheckerrr.glitch.me/

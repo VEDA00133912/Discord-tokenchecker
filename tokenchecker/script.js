@@ -8,6 +8,9 @@ const submit = (event) => {
     logEntryPlaceholder.style.display = 'none';
     logDiv.innerHTML = '';
 
+    let totalTokens = input.length;
+    let processedTokens = 0;
+
     fetch('/checkTokens', {
         method: 'POST',
         headers: {
@@ -19,10 +22,16 @@ const submit = (event) => {
     .then(data => {
         data.validTokens.forEach(token => {
             logDiv.innerHTML += `<div class="log-entry success">✓ ${token}</div>`;
+            processedTokens++;
         });
         data.invalidTokens.forEach(token => {
             logDiv.innerHTML += `<div class="log-entry failure">✗ ${token}</div>`;
+            processedTokens++;
         });
+
+        if (processedTokens === totalTokens) {
+            logDiv.innerHTML += `<div class="log-entry completion">Tokenのチェックが完了しました。</div>`;
+        }
     })
     .catch(error => {
         logDiv.innerHTML += `<div class="log-entry failure">✗ Error occurred while checking tokens.</div>`;
