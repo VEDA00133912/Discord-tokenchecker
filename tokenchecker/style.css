@@ -3,7 +3,7 @@
 
 body {
   font-family: "Kosugi Maru", sans-serif;
-  background-image: url('assets/background.png');
+  background-image: url('https://raw.githubusercontent.com/VEDA00133912/Discord-tokenchecker/refs/heads/main/assets/background.png');
   background-size: cover;
   background-position: center;
   display: flex;
