@@ -6,4 +6,4 @@ Discordのユーザーtokenの生存確認ができます
 完了メッセージがでたらDownload Valid Tokensボタンでダウンロードします
 
 ### サイト版
-
+https://discord-tokenchecker.pages.dev/
