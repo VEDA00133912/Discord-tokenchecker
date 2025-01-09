@@ -75,7 +75,7 @@ h1 {
 
 #tokenForm button:hover {
   background-color: #ff1a1a;
-  transform: scale(1.05); /* ホバー時の拡大効果 */
+  transform: scale(1.05);
 }
 
 #log {
@@ -84,7 +84,7 @@ h1 {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  width: 100%; /* フル幅に設定 */
+  width: 100%;
   box-sizing: border-box;
   overflow-y: auto;
   max-height: 300px;
@@ -101,24 +101,24 @@ h1 {
 }
 
 .success {
-  color: #90ee90; /* 成功メッセージの色 */
-  background-color: rgba(144, 238, 144, 0.2); /* 成功メッセージの背景色 */
-  padding: 5px; /* パディング */
-  border-radius: 5px; /* 角を丸める */
+  color: #90ee90;
+  background-color: rgba(144, 238, 144, 0.2);
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .failure {
-  color: #ff4d4d; /* 失敗メッセージの色 */
-  background-color: rgba(255, 77, 77, 0.2); /* 失敗メッセージの背景色 */
-  padding: 5px; /* パディング */
-  border-radius: 5px; /* 角を丸める */
+  color: #ff4d4d;
+  background-color: rgba(255, 77, 77, 0.2);
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .info {
-  color: #ffffff; /* 情報メッセージの色 */
-  background-color: rgba(255, 255, 255, 0.1); /* 情報メッセージの背景色 */
-  padding: 5px; /* パディング */
-  border-radius: 5px; /* 角を丸める */
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px;
+  border-radius: 5px;
 }
 
 #downloadBtn {
@@ -135,5 +135,5 @@ h1 {
 
 #downloadBtn:hover {
   background-color: #45a049;
-  transform: scale(1.05); /* ホバー時の拡大効果 */
+  transform: scale(1.05);
 }

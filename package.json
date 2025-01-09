@@ -1,0 +1,17 @@
+{
+  "name": "discord-tokenchecker",
+  "version": "1.0.0",
+  "description": "Discordのユーザーtokenの生存確認ができるHTML",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "りょう",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "express": "^4.21.2"
+  }
+}
