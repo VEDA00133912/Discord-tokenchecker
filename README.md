@@ -1,8 +1,5 @@
 # Discord-tokenchecker
-Discordのユーザーtokenの生存確認ができるHTML
-
-結構前に作ったやつだから汚いね()<br>
-なんで背景黒で光らせてるのかは謎。見づらい((
+Discordのユーザーtokenの生存確認ができます
 
 ### 使い方
 1: **Enter discord tokens**って書いてあるテキストエリアにtokenを入力(複数可)<br>
