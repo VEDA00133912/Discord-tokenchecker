@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Kosugi+Maru&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Kosugi+Maru&family=Oswald:wght@200..700&family=Permanent+Marker&family=Racing+Sans+One&display=swap');
 
 body {
-  font-family: "Bangers", system-ui;
+  font-family: "Kosugi Maru", sans-serif;
   background-image: url('assets/background.png');
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,6 +13,7 @@ body {
   height: 100vh;
   margin: 0;
   color: #ffffff;
+  text-align: center;
 }
 
 h1 {
@@ -24,68 +26,68 @@ h1 {
 .container {
   font-family: "Oswald", sans-serif;
   display: flex;
+  flex-direction: column;
   max-width: 800px;
   width: 100%;
   box-sizing: border-box;
-  flex-direction: column;
-  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
 #tokenForm {
-  background: rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  width: 50%;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
 }
 
 #tokenForm label {
-  display: block;
   margin-bottom: 5px;
   font-weight: bold;
   color: #ffffff;
 }
 
 #tokenForm textarea {
-  width: calc(100% - 20px);
+  width: 100%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ff4d4d;
   border-radius: 5px;
   font-size: 16px;
+  box-sizing: border-box;
   background: rgba(255, 255, 255, 0.1);
   color: #ffffff;
+  resize: none;
 }
 
 #tokenForm button {
   font-family: "Bangers", system-ui;
-  width: 100%;
-  padding: 10px;
+  padding: 12px;
   background-color: #ff4d4d;
   color: #ffffff;
   border: none;
   border-radius: 25px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 #tokenForm button:hover {
   background-color: #ff1a1a;
+  transform: scale(1.05); /* ホバー時の拡大効果 */
 }
 
 #log {
+  margin-top: 20px;
   background: rgba(0, 0, 0, 0.8);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  width: 50%;
+  width: 100%; /* フル幅に設定 */
   box-sizing: border-box;
   overflow-y: auto;
-  max-height: 66vh;
-  margin-bottom: 20px;
+  max-height: 300px;
 }
 
 #log h2 {
@@ -98,31 +100,40 @@ h1 {
   font-size: 16px;
 }
 
-.placeholder {
-  color: rgba(255, 255, 255, 0.5); 
-  font-style: italic;
-}
-
 .success {
-  color: #90ee90;
+  color: #90ee90; /* 成功メッセージの色 */
+  background-color: rgba(144, 238, 144, 0.2); /* 成功メッセージの背景色 */
+  padding: 5px; /* パディング */
+  border-radius: 5px; /* 角を丸める */
 }
 
 .failure {
-  color: #ff4d4d;
+  color: #ff4d4d; /* 失敗メッセージの色 */
+  background-color: rgba(255, 77, 77, 0.2); /* 失敗メッセージの背景色 */
+  padding: 5px; /* パディング */
+  border-radius: 5px; /* 角を丸める */
+}
+
+.info {
+  color: #ffffff; /* 情報メッセージの色 */
+  background-color: rgba(255, 255, 255, 0.1); /* 情報メッセージの背景色 */
+  padding: 5px; /* パディング */
+  border-radius: 5px; /* 角を丸める */
 }
 
 #downloadBtn {
-  font-family: "Bangers", system-ui;
-  padding: 10px 20px;
-  background-color: #ff4d4d;
+  padding: 12px;
+  background-color: #4caf50;
   color: #ffffff;
   border: none;
   border-radius: 25px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 20px;
 }
 
 #downloadBtn:hover {
-  background-color: #ff1a1a;
+  background-color: #45a049;
+  transform: scale(1.05); /* ホバー時の拡大効果 */
 }
